@@ -52,6 +52,8 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 const allowedOrigins = [
         "https://p0k804os4c4scowcg488800c.194.164.151.15.sslip.io",
+        "http://c0w4owoo4scccsw0s800ok8w.194.164.151.15.sslip.io",
+        "http://d4gwg0c8csgkkw40osko48c0.194.164.151.15.sslip.io",
         "https://findernate.com",
         "https://www.findernate.com",
         "https://apis.findernate.com", // API domain
@@ -63,6 +65,7 @@ const allowedOrigins = [
         "http://127.0.0.1:3001",
         "http://127.0.0.1:4000",
         "https://z0n8vrlt-4000.inc1.devtunnels.ms",
+        /^https?:\/\/[\w-]+\.194\.164\.151\.15\.sslip\.io$/,
         // Allow all local network IPs for development
         ...(process.env.NODE_ENV === 'development' ? [/^http:\/\/192\.168\.\d+\.\d+:4000$/] : []),
         ...(process.env.ADDITIONAL_CORS_ORIGINS ? process.env.ADDITIONAL_CORS_ORIGINS.split(',') : [])

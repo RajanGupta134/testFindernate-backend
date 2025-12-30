@@ -53,7 +53,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 const allowedOrigins = [
         "https://p0k804os4c4scowcg488800c.194.164.151.15.sslip.io",
         "http://c0w4owoo4scccsw0s800ok8w.194.164.151.15.sslip.io",
-        "http://d4gwg0c8csgkkw40osko48c0.194.164.151.15.sslip.io",
+        "https://d4gwg0c8csgkkw40osko48c0.194.164.151.15.sslip.io",
         "https://findernate.com",
         "https://www.findernate.com",
         "https://apis.findernate.com", // API domain
